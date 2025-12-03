@@ -1,0 +1,417 @@
+/* 전역 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+    background: white;
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.3);
+    line-height: 1.6;
+}
+
+.header h1 .subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    margin-top: 10px;
+    opacity: 0.95;
+}
+
+/* 인트로 섹션 */
+.intro-section {
+    background: linear-gradient(135deg, #e8ecf7 0%, #dce3f5 100%);
+    padding: 50px 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+    padding: 20px 0 60px;
+}
+
+/* 섹션 스타일 */
+.case-section {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* 비교 그룹 */
+.comparison-group {
+    margin-bottom: 60px;
+}
+
+.comparison-group:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* 전후 비교 컨테이너 */
+.before-after-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 15px;
+}
+
+.image-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 라벨 스타일 */
+.label {
+    position: absolute;
+    top: 15px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.label-before {
+    left: 15px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.label-after {
+    right: 15px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+/* 화살표 */
+.arrow {
+    font-size: 3.5rem;
+    color: #667eea;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    flex-shrink: 0;
+}
+
+/* 감사 문자 박스 */
+.testimonial-box {
+    margin-top: 60px;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d63031;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial-image {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 후속 섹션 */
+.followup-section {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+}
+
+.followup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.followup-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.followup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.followup-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 푸터 */
+.footer {
+    background: white;
+    color: #333;
+    padding: 50px 0 30px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.footer h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px 35px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.3);
+}
+
+.footer-contact {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footer-contact p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #555;
+}
+
+.footer-contact .phone {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.footer-contact strong {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #667eea;
+}
+
+.footer-note {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+        padding: 20px 30px;
+    }
+
+    .header h1 .subtitle {
+        font-size: 1.1rem;
+        margin-top: 8px;
+    }
+
+    .intro-title {
+        font-size: 1.8rem;
+    }
+
+    .intro-description {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .case-section {
+        padding: 30px 20px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+
+
+    .before-after-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow {
+        font-size: 2.5rem;
+        transform: rotate(90deg);
+    }
+
+    .image-card {
+        min-width: 100%;
+    }
+
+    .followup-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-box {
+        padding: 25px 15px;
+    }
+
+    .footer h2 {
+        font-size: 1.5rem;
+        padding: 18px 25px;
+    }
+
+    .footer-contact p {
+        font-size: 1rem;
+    }
+
+    .footer-contact .phone {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+    }
+
+    .header h1 .subtitle {
+        font-size: 1rem;
+        margin-top: 6px;
+    }
+
+    .intro-title {
+        font-size: 1.5rem;
+    }
+
+    .intro-description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+
+
+    .label {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+
+    .followup-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
